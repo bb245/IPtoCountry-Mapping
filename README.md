@@ -1,8 +1,12 @@
-INTERMEDIATE EVENT-DRIVEN PROGRAMMING WITH NODE.JS AND REDIS
-============================================================
-T. Budiman 
+EVENT-DRIVEN PROGRAMMING WITH NODE.JS AND REDIS
+===============================================
+
+T. Budiman
+
 tbudiman@gmail.com
+
 @tbudiman
+
 
 Bala
 
@@ -40,11 +44,19 @@ The redis module is needed to access the redis database.
 $ npm install hiredis redis
 ```
 
-Mocha module is need to do unit testing. We'll install mocha globally, so other projects can use it too.
+Mocha and should modules are needed to do unit testing. We'll install mocha globally, so other projects can use it too.
 
 ```sh
 $ sudo npm install -g mocha
+$ npm install should
 ```
+
+And we'll use underscore.string module to help us with some string manipulation functions.
+
+```sh
+$ npm install underscore.string
+```
+
 
 References
 ----------
