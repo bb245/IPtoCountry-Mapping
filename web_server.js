@@ -6,7 +6,8 @@ var http = require("http"), server,
 var inet = require("./inet");
 
 server = http.createServer(function (request, response) {
-    var redis_info;
+    var redis_info,
+        start = process.hrtime();
 
     response.writeHead(200, {
         "Content-Type": "text/plain"
@@ -30,7 +31,7 @@ server = http.createServer(function (request, response) {
         }
         response.write("IP Address: " + remote_ip + "\n");
         if (reply.length === 1) {
-            var city_info,
+            var city_info, diff,
                 data = JSON.parse(reply[0]);
             city_info = "City: " + data.city + "\n";
             city_info += "Region Name: " + data.region_name + "\n";
@@ -41,6 +42,10 @@ server = http.createServer(function (request, response) {
             city_info += "Metro Code: " + data.metro_code + "\n";
             city_info += "Area Code: " + data.area_code + "\n";
             response.write(city_info);
+            diff = process.hrtime(start);
+            response.write("\n\nIdentification process took " +
+                           (diff[0] * 1e9 + diff[1]).toString() +
+                           " nanoseconds\n");
         }
 
         response.write("\nThis page was generated after talking to redis.\n\n" +
