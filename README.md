@@ -1,5 +1,5 @@
-INTERMEDIATE EVENT-DRIVEN PROGRAMMING WITH NODE.JS AND REDIS
-============================================================
+EVENT-DRIVEN PROGRAMMING WITH NODE.JS AND REDIS
+===============================================
 T. Budiman 
 tbudiman@gmail.com
 @tbudiman
@@ -45,6 +45,13 @@ Mocha module is need to do unit testing. We'll install mocha globally, so other 
 ```sh
 $ sudo npm install -g mocha
 ```
+
+And we'll use underscore.string module to help us with some string manipulation functions.
+
+```sh
+$ npm install underscore.string
+```
+
 
 References
 ----------
