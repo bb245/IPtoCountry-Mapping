@@ -1,0 +1,19 @@
+{
+  "author": "T. Budiman",
+  "name": "ipident",
+  "description": "Node web server application to identify the location of IP addresses using redis.",
+  "version": "0.0.1",
+  "repository": {
+    "url": "https://github.com/Webizly/ipident"
+  },
+  "main": "./lib/main",
+  "bin": {
+    "ipident": "./bin/ipident"
+  },
+  "dependencies": {'csv', 'redis', 'underscore.string'},
+  "devDependencies": {},
+  "optionalDependencies": {'hiredis'},
+  "engines": {
+    "node": "*"
+  }
+}
