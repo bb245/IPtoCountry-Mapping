@@ -1,7 +1,8 @@
 /*global describe, it*/
 "use strict";
-var inet = require("../inet"),
-    should = require('should');
+var inet = require("../lib/inet"),
+    should = require("should");
+
 
 describe('inet', function () {
     describe('#aton()', function () {
