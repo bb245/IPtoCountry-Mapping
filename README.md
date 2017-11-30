@@ -67,4 +67,4 @@ References
   [IPtoCountry-Mapping]: https://github.com/bb245/IPtoCountry-Mapping
   [Node CSV]: http://www.adaltas.com/projects/node-csv/
   [Node Redis]: https://github.com/mranney/node_redis
-  [mocha]: http://visionmedia.github.io/mocha/
+  [mocha]: http://mochajs.org/
